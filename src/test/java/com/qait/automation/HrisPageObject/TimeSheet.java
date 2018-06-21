@@ -12,12 +12,12 @@ public class TimeSheet {
 		this.driver = driver;
 	}
 	
-	private WebElement searchBarWebElementtOnTimeSheet() {
+	private WebElement getWebElementtOnTimeSheet() {
 		return this.driver.findElement(By.id("dvSearchBox"));
 	}
 	
 	public boolean isElementDisplayed() {
-		String searchBarElementOnTimeSheetToCheck = searchBarWebElementtOnTimeSheet().getAttribute("class");
-		return searchBarWebElementtOnTimeSheet().equals("search-box");
+		String WebElementOnTimeSheetToCheck = getWebElementtOnTimeSheet().getAttribute("class");
+		return WebElementOnTimeSheetToCheck.equals("search-box");
 	}
 }

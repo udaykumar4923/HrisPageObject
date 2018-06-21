@@ -49,7 +49,7 @@ public class HrisPageobjectautomation {
     
     @AfterClass
     public void closeBrowser(){
-        //driver.quit();
+        driver.quit();
     }
 	
 	
